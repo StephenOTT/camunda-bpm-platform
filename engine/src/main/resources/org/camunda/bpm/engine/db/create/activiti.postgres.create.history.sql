@@ -252,7 +252,8 @@ create table ACT_HI_BATCH (
     SEED_JOB_DEF_ID_ varchar(64),
     MONITOR_JOB_DEF_ID_ varchar(64),
     BATCH_JOB_DEF_ID_ varchar(64),
-    TENANT_ID_  varchar(64),
+    TENANT_ID_ varchar(64),
+    CREATE_USER_ID_ varchar(255),
     START_TIME_ timestamp not null,
     END_TIME_ timestamp,
     primary key (ID_)

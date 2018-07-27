@@ -2,6 +2,7 @@ package org.camunda.bpm.engine.test.api.authorization.externaltask;
 
 import static org.camunda.bpm.engine.test.api.authorization.util.AuthorizationScenario.scenario;
 import static org.camunda.bpm.engine.test.api.authorization.util.AuthorizationSpec.grant;
+import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -136,6 +137,8 @@ public class SetExternalTasksRetriesBatchAuthorizationTest {
       Assert.assertEquals(5, (int) task.getRetries());
       }
     }
+//    HistoricBatch historicBatch = engineRule.getHistoryService().createHistoricBatchQuery().list().get(0);
+//    assertEquals("userId", historicBatch.getCreateUserId());
   }
 
   @Test
